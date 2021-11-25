@@ -1,0 +1,42 @@
+.required{
+    color: red;
+}
+
+.show{
+    display: block;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-50{
+    width: 50%;
+}
+
+.height-400{
+    height: 400px;
+}
+
+.deleted-users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+.pw-change-container {
+    display: none;
+}
+
+.buy-plan-parallax-bg-image{
+    background-image: url("../img/drawkit/drawkit-grape-pack-illustration-17.svg");
+}
+
