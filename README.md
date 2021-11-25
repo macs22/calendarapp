@@ -25,7 +25,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 Simple calendar laravel app.
 
-### Installation commans
+### Installation commands
 
 - Git clone [repository](https://github.com/macs22/calendarapp.git).
 - php artisan key:generate
