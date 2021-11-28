@@ -15,8 +15,9 @@ class CalendarController extends Controller
     public function index()
     {
         $event = Event::first();
+        $month = date('F');
 
-        return view('calendar.index', compact('event'));
+        return view('calendar.index', compact('event', 'month'));
     }
 
     /** 

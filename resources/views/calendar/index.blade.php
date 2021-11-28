@@ -94,7 +94,7 @@
                                         </div>
 
                                         <div class="col-md-8">
-                                            <div><h1>Nov 2021</h1></div>
+                                            <div><h1>{{ $month }} 2021</h1></div>
                                                 
                                             <div class="col-lg-12" id="dates">
                                             </div>
