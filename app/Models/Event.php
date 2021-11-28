@@ -62,10 +62,10 @@ class Event extends Model
             $shortName = $date->format('l');
 
             $emptyEvent = [
-                'title' => '',
-                'day' => $shortName,
-                'count' => $i,
-                'is_event' => false
+                'title'     => '',
+                'day'       => $shortName,
+                'count'     => $i,
+                'is_event'  => false
             ];
 
             if (!$event) {
@@ -73,10 +73,10 @@ class Event extends Model
             } else {
                 if (in_array($date, $daterange) && in_array($shortName, $weekDays)) {
                     $dates[] = [
-                        'title' => $event->title,
-                        'day' => $shortName,
-                        'count' => $i,
-                        'is_event' => true
+                        'title'     => $event->title,
+                        'day'       => $shortName,
+                        'count'     => $i,
+                        'is_event'  => true
                     ];
                 } else {
                     $dates[] = $emptyEvent; 
