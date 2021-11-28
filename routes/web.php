@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Homepage Route
+Route::group(["middleware" => ["web"]], function () {
+    Route::get("/", "CalendarController@index")->name("index");
 
-Route::get('/', function () {
-    return view('calendar.index');
+    Route::post("calendar/addEvent", "CalendarController@addEvent")->name("calendar.addEvent");
+    Route::get("calendar/getEvents", "CalendarController@getEvents")->name("calendar.getEvents");
 });
